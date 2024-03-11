@@ -1,8 +1,6 @@
 using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using AlephVault.Unity.EVMGames.Contracts.Bridge.Types.BridgeContractComponents.Events;
-using AlephVault.Unity.EVMGames.Contracts.Bridge.Types.BridgeContractComponents.Functions;
 using AlephVault.Unity.EVMGames.Contracts.Types;
 using AlephVault.Unity.EVMGames.Contracts.Utils;
 using Nethereum.ABI;
@@ -14,6 +12,9 @@ namespace AlephVault.Unity.EVMGames.Contracts.Bridge
 {
     namespace Types
     {
+        using BridgeContractComponents.Events;
+        using BridgeContractComponents.Functions;
+
         /// <summary>
         ///   An interface to the Bridge contract.
         /// </summary>

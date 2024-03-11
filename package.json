@@ -1,11 +1,11 @@
 {
   "name": "com.alephvault.unity.evmgames.contracts.bridge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Aleph Vault - Unity - EVMGames.Contracts.Bridge",
   "description": "An implementation of the C# interface for the Bridge contract.",
   "unity": "2023.1",
   "dependencies": {
-    "com.alephvault.unity.evmgames.contracts": "0.0.1"
+    "com.alephvault.unity.evmgames.contracts": "0.0.2"
   },
   "author": {
     "name": "Aleph Vault",
