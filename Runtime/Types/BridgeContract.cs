@@ -2,6 +2,7 @@ using System;
 using System.Numerics;
 using System.Threading.Tasks;
 using AlephVault.Unity.EVMGames.Contracts.Types;
+using AlephVault.Unity.EVMGames.Contracts.Types.Events;
 using AlephVault.Unity.EVMGames.Contracts.Utils;
 using Nethereum.ABI;
 using Nethereum.Contracts;
@@ -209,7 +210,7 @@ namespace AlephVault.Unity.EVMGames.Contracts.Bridge
             /// </summary>
             /// <param name="filterMaker">The filter maker</param>
             /// <param name="fromBlock">The starting block</param>
-            public EventsWorker<BridgedResourceTypeDefinedEventDTO> MakeBridgedResourceTypeDefinedEventsWorker(Func<Event<BridgedResourceTypeDefinedEventDTO>, BlockParameter, NewFilterInput> filterMaker, BlockParameter fromBlock = null)
+            public EventsWorker<BridgedResourceTypeDefinedEventDTO> MakeBridgedResourceTypeDefinedEventsWorker(Func<Event<BridgedResourceTypeDefinedEventDTO>, NewFilterInput> filterMaker, BlockParameter fromBlock = null)
             {
                 return MakeEventsWorker(filterMaker, fromBlock);
             }
@@ -219,7 +220,7 @@ namespace AlephVault.Unity.EVMGames.Contracts.Bridge
             /// </summary>
             /// <param name="filterMaker">The filter maker</param>
             /// <param name="fromBlock">The starting block</param>
-            public EventsWorker<BridgedResourceTypeRemovedEventDTO> MakeBridgedResourceTypeRemovedEventsWorker(Func<Event<BridgedResourceTypeRemovedEventDTO>, BlockParameter, NewFilterInput> filterMaker, BlockParameter fromBlock = null)
+            public EventsWorker<BridgedResourceTypeRemovedEventDTO> MakeBridgedResourceTypeRemovedEventsWorker(Func<Event<BridgedResourceTypeRemovedEventDTO>, NewFilterInput> filterMaker, BlockParameter fromBlock = null)
             {
                 return MakeEventsWorker(filterMaker, fromBlock);
             }
@@ -229,7 +230,7 @@ namespace AlephVault.Unity.EVMGames.Contracts.Bridge
             /// </summary>
             /// <param name="filterMaker">The filter maker</param>
             /// <param name="fromBlock">The starting block</param>
-            public EventsWorker<OwnershipTransferredEventDTO> MakeOwnershipTransferredEventsWorker(Func<Event<OwnershipTransferredEventDTO>, BlockParameter, NewFilterInput> filterMaker, BlockParameter fromBlock = null)
+            public EventsWorker<OwnershipTransferredEventDTO> MakeOwnershipTransferredEventsWorker(Func<Event<OwnershipTransferredEventDTO>, NewFilterInput> filterMaker, BlockParameter fromBlock = null)
             {
                 return MakeEventsWorker(filterMaker, fromBlock);
             }
